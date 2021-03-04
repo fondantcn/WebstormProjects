@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!--
+				v-on：给元素绑定事件
+				可以简写为@
+			-->
+			
+			<input type="button" v-on:click="dolt" value="v-on指令" />
+			<input @click="dolt" type="button" value="v-on简写" />
+			<input @dblclick="dolt" type="button" value="双击事件" />
+			<h2 @click="changeFood">{{food}}</h2>
+		</div>
+	</body>
+	<script>
+		var app = new Vue({
+			el:"#app",
+			data:{
+				food:"西蓝花"
+			},
+			methods:{
+				dolt:function(){
+					//逻辑
+					alert("做IT")
+				},
+				changeFood:function(){
+					console.log(this.food)
+					this.food+="很好吃"
+				}
+			}
+		})
+	</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.myDiv{
+				width: 200px;
+				height: 200px;
+				border: 2px solid saddlebrown;
+				background-color: yellow;
+				padding: 10px;
+				margin: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="myDiv"></div>
+	</body>
+	<script src="../jquery-3.5.1.min.js"></script>
+	<script>
+		$(function(){
+		console.log($(".myDiv").width())
+			$(".myDiv").width("300px")
+			console.log($(".myDiv").innerWidth())
+			console.log($(".myDiv").outerWidth())
+			console.log($(".myDiv").outerWidth(true))
+			
+		})
+	</script>
+</html>

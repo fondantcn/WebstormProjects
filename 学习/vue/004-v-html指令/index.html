@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!-- 
+				v-html：设置标签，innerHTML
+				内容有标签结构会被解析成标签
+			-->
+			<p v-html="contentUrl"></p>
+			<p v-text="contentUrl"></p>
+		</div>
+	</body>
+	<script>
+		var app = new Vue({
+			el:"#app",
+			data:{
+				content:"Fondant",
+				contentUrl:"<a href='www.baidu.com'>百度</a>"
+			}
+		})
+	</script>
+</html>

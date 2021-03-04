@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div>DIVCCCC</div>
+		<div>DIVDDDD</div>
+		<div>DIVAAAA</div>
+		<div id="foo">DIVFFFF</div>
+		<div class="itcast">DIVBBBB</div>
+		<div class="itcast">DIVEEEE</div>
+		<p>PAAAA</p>
+		<p>PCCCC</p>
+		<p class="itcast">PBBBB</p>
+	</body>
+	<script>
+		
+		$(function(){
+			
+			
+			//通过each()遍历所有div，在每个div元素前 加入 “安徽新华”
+			$("div").prepend("安徽新华")
+			//获取页面中ID为foo的元素的内容
+			//console.log($("div#foo").html())
+			//通过size() 或 length 打印页面中 class属性为 itcast 的元素数量
+			//console.log($(".itcast").length)
+			console.log($(".itcast").size())
+			//获取class属性为itcast的div的个数
+			//console.log($("div.itcast").length)
+			
+		})
+		
+	</script>
+</html>

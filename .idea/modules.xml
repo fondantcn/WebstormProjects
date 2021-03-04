@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/vue/.idea/Vue.iml" filepath="$PROJECT_DIR$/vue/.idea/Vue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/githubPage/.idea/githubPage.iml" filepath="$PROJECT_DIR$/githubPage/.idea/githubPage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/js/.idea/js.iml" filepath="$PROJECT_DIR$/js/.idea/js.iml" />
+      <module fileurl="file://$PROJECT_DIR$/node/.idea/node.iml" filepath="$PROJECT_DIR$/node/.idea/node.iml" />
+      <module fileurl="file://$PROJECT_DIR$/学习/.idea/学习.iml" filepath="$PROJECT_DIR$/学习/.idea/学习.iml" />
+      <module fileurl="file://$PROJECT_DIR$/项目/.idea/项目.iml" filepath="$PROJECT_DIR$/项目/.idea/项目.iml" />
+    </modules>
+  </component>
+</project>

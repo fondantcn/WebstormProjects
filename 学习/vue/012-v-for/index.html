@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!--  
+				v-for：根据数组生成列表结构
+				语法：(item,index) in data
+				语法：(每一项,索引) in 数据
+				数组长度的更新会同步到页面上，是响应式
+			-->
+			<input @click="add" type="button" value="add" />
+			<input @click="remove" type="button" value="remove" />
+			<ul>
+				<li v-for="(it,index) in arr">
+					fondant:{{it}}
+				</li>
+			</ul>
+			<h2 :title="item.name" v-for="item in vegetables">
+				{{item.name}}
+			</h2>
+		</div>
+	</body>
+	<script>
+		var app = new Vue({
+			el:"#app",
+			data:{
+				arr:["北京","上海","广州","深圳"],
+				vegetables:[
+					{name:"西蓝花"},
+					{name:"蛋炒饭"}
+				]
+			},
+			methods:{
+				add:function(){
+					this.vegetables.push({name:"玫瑰花"})
+				},
+				remove:function(){
+					this.vegetables.shift()
+				}
+			}
+		})
+	</script>
+</html>

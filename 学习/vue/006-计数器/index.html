@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="input-num">
+				<button @click="add">+</button>
+				<span>{{num}}</span>
+				<button @click="sub">-</button>
+			</div>
+		</div>
+	</body>
+	<script>
+		var app = new Vue({
+			el:"#app",
+			data:{
+				num:"1"
+			},
+			methods:{
+				add:function(){
+					console.log('add')
+					this.num++
+				},
+				sub:function(){
+					console.log('sub')
+					this.num--
+				}
+			}
+			
+		})
+	</script>
+</html>

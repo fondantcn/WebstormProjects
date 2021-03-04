@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Document</title>
+    </head>
+    <script src="../vue.js"></script>
+
+    <body>
+        <div id="app">
+            {{message}}
+            <h2>{{school.name}} {{school.mobile}}</h2>
+            <ul>
+                <li>{{campus[0]}}</li>
+                <li>{{campus[1]}}</li>
+                <li>{{campus[2]}}</li>
+            </ul>
+        </div>
+
+    </body>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: '对象',
+                school: {
+                    name: '黑马程序员',
+                    mobile: '400-618-9090'
+                },
+                campus: ["北京", "上海", "广州"]
+            }
+        })
+    </script>
+
+</html>

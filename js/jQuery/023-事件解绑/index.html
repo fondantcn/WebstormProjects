@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		.current{
+			background-color: #DA5555;
+		}
+	</style>
+	<script src="../jquery-3.5.1.min.js"></script>
+	<body>
+		<ul class="myUl">
+			<li>我们都是好孩子</li>
+			<li>我们都是好孩子</li>
+			<li>我们都是好孩子</li>
+			<li>我们都是好孩子</li>
+			<li>我们都是好孩子</li>
+		</ul>
+		<input class="btInput" type="button" value="解绑全部" />
+		<input class="btInput" type="button" value="解绑全部点击" />
+	</body>
+	<script>
+		$(function(){
+			$('.myUl li').on({
+				click:function(){
+					$(this).css('background','pink')
+				},
+				// mousedown:function(){
+				// 	$(this).css('background','green')
+				// }
+			})
+			$('.myUl li').on('mouseenter mouseleave',function(){
+				$(this).toggleClass('current')
+			})
+			$('.btInput:eq(0)').click(function(){
+				$("*").off()
+			})
+			$('.btInput:eq(1)').click(function(){
+				$("*").off('click')
+			})
+		})
+	</script>
+</html>

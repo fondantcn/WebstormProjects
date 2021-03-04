@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="box" id="weibo">
+			<span>微博发布</span>
+			<textarea class="txt" cols="30" name="" rows="10"></textarea>
+			<button class="btn">发布</button>
+			<ul>
+			</ul>
+		</div>
+	</body>
+	<script src="../jquery-3.5.1.min.js"></script>
+	<script>
+		$(function() {
+			$('.btn').on('click',function(){
+				if($('.txt').val()!==""){
+					const $li = $('<li></li>');
+					$li.html($('.txt').val()+"<a href='#'>删除</a>");
+					$('ul').prepend($li)
+					$li.slideDown()
+				}
+			})
+			$(".box ul").on("click","a",function(){
+				$(this).parent().slideUp(function(){
+					$(this).remove()
+				})
+			})
+		})
+	</script>
+</html>

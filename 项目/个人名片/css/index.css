@@ -1,0 +1,518 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a {
+	color: #3e3e3e;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #3e3e3e;
+}
+
+li {
+	list-style: none;
+}
+
+html,
+body,
+#F_Web {
+	width: 100%;
+	height: 100%;
+	/* background-color: #007BFF; */
+	color: #3e3e3e;
+}
+
+#F_Content {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#Box {
+	width: 1170px;
+	height: 600px;
+	background-color: #f8e9e9;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 15px #ccc;
+	border-radius: 9px;
+	overflow: hidden;
+}
+
+/* 个人介绍开始 */
+#author {
+	width: 320px;
+	height: 600px;
+	/* border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px; */
+	background-image: url(../img/2.jpg);
+	background-repeat: no-repeat;
+	background-position-y: 1px;
+	background-position-x: 1px;
+	position: absolute;
+	z-index: -1;
+}
+
+.aut-img img {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	border: 5px solid white;
+	position: relative;
+	top: 140px;
+}
+
+.aut-h {
+	position: relative;
+	top: 160px;
+	color: #777;
+}
+
+.aut-h h3 {
+	color: #3e3e3e;
+}
+
+.aut-btn {
+	position: relative;
+	top: 190px;
+}
+
+.aut-btn input {
+	width: 180px;
+	height: 45px;
+	border: 0;
+	border-radius: 50px;
+	color: #fff;
+	box-shadow: 0 0 2px #9147FF;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	background-color: #9147ff;
+	transition: background-color 0.3s;
+	transition: all 0.3s ease-out;
+	transform: scale(1);
+}
+
+.aut-btn input:hover {
+	box-shadow: 0 0 2px #646464;
+	background-color: #646464;
+	transition: background-color 0.5;
+	transition: all 0.3s ease-out;
+	transform: scale(1.1);
+}
+
+.aut-ul {
+	position: relative;
+	top: 240px;
+}
+
+.aut-ul ul {
+	height: 45px;
+	margin-bottom: 0;
+}
+
+.aut-ul ul li {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	margin: 0 2px;
+}
+
+.aut-ul i {
+	display: block;
+	width: 45px;
+	height: 45px;
+	color: #848484;
+	background-color: #fff;
+	border: 1px solid #dbdbdb;
+	border-radius: 50%;
+	box-shadow: 0 0 2px #dbdbdb;
+	transition: all 0.3s ease-out;
+	transform: scale(1);
+}
+
+.aut-ul i::before {
+	line-height: 45px;
+	border-bottom: 0px;
+}
+
+.aut-ul i:hover {
+	color: white;
+	background-color: #9147FF;
+	border: 1px solid #848484;
+	transition: all 0.3s ease-out;
+	transform: scale(1.2);
+}
+
+/* 个人介绍结束 */
+/* 导航栏开始 */
+#info {
+	width: 1170px;
+	height: 600px;
+	/* background-color: #10707F; */
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 320px;
+	z-index: 10;
+	transition: all 0.3s ease-out;
+
+}
+
+.header {
+	width: 100px;
+	height: 600px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: #f8e9e9;
+	/* 	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px; */
+}
+
+.hea-ul li {
+	position: relative;
+	min-width: 100px;
+	border-bottom: 1px solid #f0e2e2;
+}
+
+.hea-ul li:last-child {
+	position: relative;
+	min-width: 100px;
+	border-bottom: 0px;
+}
+
+.hea-ul li a {
+	width: 74px;
+	height: 44px;
+	display: inline-block;
+	padding: 16px 12px 21px;
+	color: #212121;
+}
+
+.hea-ul li a i {
+	height: 25px;
+	font-size: 24px;
+	display: block;
+	color: #838383;
+	margin-bottom: 4px;
+}
+
+.home {
+	position: relative;
+	top: 20px;
+	width: 100px;
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+.home a.logo {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 0;
+	border: 2px solid #ebdddd;
+}
+
+/* 导航栏结束 */
+/* 内容开始 */
+.card {
+	width: 650px;
+	height: 500px;
+	position: absolute;
+	padding: 50px;
+	top: 0;
+	left: 100px;
+	border: 0;
+	z-index: 0;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+/* 内容结束 */
+/* 0 */
+.card-0 {
+	z-index: 9;
+	width: 1070px;
+	height: 100%;
+	left: 100px;
+	background-color: #fff;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	background-image: url(../img/1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 0;
+}
+
+.card-0 .img {
+	position: relative;
+	top: 100px;
+}
+
+.card-0 .img img {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	border: 5px solid white;
+}
+
+.card-0 .author {
+	position: relative;
+	top: 110px;
+	color: #3e3e3e;
+}
+
+.card-0 .text {
+	width: 600px;
+	margin: 0 auto;
+	position: relative;
+	top: 110px;
+	color: #888;
+	font-size: 16px;
+}
+
+.card-0 .btn {
+	position: relative;
+	top: 160px;
+}
+
+.card-0 .btn input {
+	width: 220px;
+	height: 50px;
+	border-radius: 50px;
+	color: #fff;
+	box-shadow: 0 0 2px #9147FF;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	margin: 0 15px;
+	background-color: #9147ff;
+	transition: all 0.3s ease-out;
+	transform: scale(1);
+}
+
+.card-0 .btn input:hover {
+	background-color: #fefefe;
+	box-shadow: 0 0 2px #646464;
+	color: #000000;
+	transition: all 0.3s ease-out;
+	transform: scale(1.1);
+}
+
+.card-0 .btn input.b {
+	color: #000000;
+	background-color: #fefefe;
+	box-shadow: 0 0 2px #646464;
+}
+
+.card-0 .btn input.b:hover {
+	color: #fff;
+	background-color: #9147ff;
+}
+
+.card-0 .aut-ul {
+	top: 220px;
+}
+/* 0 */
+/* 1 */
+.card-1{
+	z-index: 1;
+	background-color: white;
+}
+.card-1 .cnd{
+	width: 100%;
+	height: 100%;
+	text-align:left;
+}
+.card-1 h4{
+	/* float: left; */
+	font-size: 22px;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+.card-1 .text{
+	margin-bottom: 20px;
+}
+.card-1 .text span{
+	color: #888;
+	line-height:1.7em
+}
+.card-1 .ul{
+	float: left;
+	width: 50%;
+}
+.card-1 .ul li{
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.card-1 .ul li span{
+	color: #888;
+	font-weight: 500;
+}
+.card-1 .uls{
+	height: 126px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+/* 1 */
+/* 2 */
+.card-2{
+	z-index: 9;
+	text-align: left;
+	background-color: white;
+}
+.card-2 .fa{
+	float: none;
+}
+.card-2 .cnd{
+	height: 100%;
+}
+.card-2>.cnd>h4{
+	font-size: 25px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid  #e5e5e5;
+}
+.card-2 .row{
+	height: 100%;
+}
+.card-2 .left{
+	width: 305px;
+	height: 100%;
+	float: left;
+	padding: 0  10px;
+}
+.card-2 .right{
+	width: 305px;
+	height: 100%;
+	float: right;
+	padding: 0  10px;
+}
+.card-2 .row .col-header{
+	margin-bottom: 10px;
+}
+.card-2 .row .col-header h4{
+	display: table;
+}
+.card-2 .fa{
+	color: #9147FF;
+	font-size: 20px;
+}
+.card-2 .pole{
+	width: 20px;
+	height: 100%;
+	float: left;
+}
+.card-2 .pole .round{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #9147FF;
+	margin-bottom: 130px;
+	position: relative;
+}
+
+.card-2 .pole .round::after{
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	z-index: 9;
+}
+.card-2 .pole .round::before{
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 140px;
+	background-color: #777;
+	position: absolute;
+	left: 9px;
+	top: 20px;
+	z-index: 9;
+}
+.card-2 .w .past .pCon{
+	height: 150px;
+	width: 300px;
+	position: relative;
+	left: 10px;
+	top: -1px;
+}
+.card-2 .w .past .pCon h4{
+	display: inline-block;
+}
+.card-2 .w .past .pCon >div{
+	height: 120px;
+	position: relative;
+	left: 10px;
+	top: 5px;
+	box-shadow: 0 0 5px #888;
+	border-radius: 10px;
+	background-image: url(../img/jlbj.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card-2 .w .past .pCon .foot{
+	height: 45px;
+	width: 280px;
+	padding: 0px 10px 0px 10px;
+	background-color: rgba(225,225,225,.3);
+	position: absolute;
+	top: 75px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0px -5px 5px rgba(225,225,225,.3);
+	overflow: hidden;
+}
+.card-2 .w .past .pCon .foot:hover{
+	top: 5px;
+	height:115px;
+	border-radius: 10px;
+	background-color: rgba(225,225,225,.5);
+	box-shadow: 0px -5px 0px rgba(225,225,225,.5);
+}
+.card-2 .w .past .pCon .t{
+	top: 5px;
+	height:115px;
+	border-radius: 10px;
+	background-color: rgba(225,225,225,0);
+	box-shadow: 0px -5px 0px rgba(225,225,225,0);
+}
+
+.card-2 .w .past .pCon .foot span{
+	display: inline-block;
+	width: 280px;
+	color: #333;
+	text-align: center;
+}
+/* 2 */
+/* <!-- 技能 --> */
+/* 1 */
+.card-3 .con{
+	width: 325px;
+	height: 250px;
+	float: left;
+	border-radius: 20px;
+	margin:0 20px 0 0;
+	background-color: darkgoldenrod;
+}
+.card-3 .con1{
+	width: 650px;
+	height: 250px;
+	background-color: powderblue;
+}

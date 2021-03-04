@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>我们都是好孩子</li>
+			<li>我们都是好孩子</li>
+			<li class="li1">我们都是好孩子</li>
+		</ul>
+		<ol></ol>
+	</body>
+	<script src="../jquery-3.5.1.min.js"></script>
+	<script>
+		$(function(){
+			$('ul').on('click','.li1',function(){
+				console.log(this)
+			})
+			$('ol').on('click','li',function(){
+				console.log(this)
+			})
+			$('ol').append($('<li>我们都是坏孩子</li>'))
+		})
+	</script>
+</html>

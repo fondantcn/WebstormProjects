@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../jquery-2.1.4.min.js"></script>
+		<style>
+			.a{
+				width: 200px;
+				height: 200px;
+				background-color: #006400;
+				color: white;
+				border-radius: 50%;
+				line-height: 200px;
+				text-align: center;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div>Fondant</div>
+		<input id="b" type="button" value="添加" />
+		<input id="c" type="button" value="添加" />
+	</body>
+	<script>
+		$("#b").click(function() {
+
+			$("div").addClass("a")
+
+		})
+		$("#c").click(function() {
+
+			$("div").removeClass("a")
+
+		})
+		
+	</script>
+</html>

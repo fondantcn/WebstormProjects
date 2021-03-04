@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!-- 
+				v-show:根据真假切换元素的显示状态，修改display
+			 -->
+			<input @click="changeIsShow" type="button" value="切换" />
+			<input @click="addAge" type="button" value="加值" />
+			<img src="./img/1.png" v-show="isShow" />
+			<img src="img/1.png" v-show="age>=18" />
+		</div>
+	</body>
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				isShow: false,
+				age:17
+			},
+			methods: {
+				changeIsShow: function() {
+					this.isShow = !this.isShow;
+				},
+				addAge:function(){
+					this.age++
+				}
+			}
+
+		})
+	</script>
+</html>

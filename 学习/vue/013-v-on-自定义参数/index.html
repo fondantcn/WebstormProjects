@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!--  
+				可以添加形参数
+				事件修饰符：cn.vuejs.org/v2/api/#v-on
+			-->
+			<input @click="doIt(9,90)" type="button" />
+			<input @keyup.enter="sayHi(v-html)" type="text" />
+		</div>
+	</body>
+	<script>
+		let app=new Vue({
+			el:'#app',
+			methods:{
+				doIt:function(p1,p2){
+					console.log(p1,p2)
+				},
+				sayHi:function(a){
+					console.log(a)
+				}
+			}
+		})
+	</script>
+</html>
