@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -9,24 +9,24 @@
 		<div id="app">
 			<input @click="setM" type="button" />
 			<input @keyup.enter="getN" type="text" v-model="messge" />
-			<h2>{{messge}}</h2>
+			<h2>{{mega}}</h2>
 		</div>
 	</body>
 	<script>
-		var app =new Vue({
-			el:'#app',
-			data:{
-				messge:'fondant'
+		const app = new Vue({
+			el: '#app',
+			data: {
+				mega: 'fondant'
 			},
-			methods:{
-				getN:function(){
+			methods: {
+				getN: function () {
 					console.log(this.messge)
 				},
-				setM:function(){
-					this.messge="fundant"
+				setM: function () {
+					this.messge = "fundant"
 				}
 			}
-			
-		})
+
+		});
 	</script>
 </html>
