@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#todoapp {
+    width: 550px;
+    margin: 0 auto;
+    background: antiquewhite;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 60px;
+    color: lightcoral;
+    padding-bottom: 50px;
+}
+.main .new-todo{
+    width: 550px;
+    height: 60px;
+    text-indent: 10px;
+    font-size: 24px;
+    border:0;
+    box-shadow: 0 0 6px #888;
+}
+.main .todo{
+
+}

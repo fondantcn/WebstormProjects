@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<section id="todoapp">
+    <!--输入框-->
+    <header class="header">
+        <h1>记事本</h1>
+    </header>
+    <!--列表-->
+    <section class="main">
+        <input class="new-todo" placeholder="请输入内容" type="text"/>
+        <ul class="todo-list">
+            <li class="todo" v-for="(item,index) in list">
+                <div class="view">
+                    <span class="index">{{index + 1}}.</span>
+                    <label>{{item}}</label>
+                    <button class="destroy">X</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--统计和清空-->
+    <footer class="footer"></footer>
+</section>
+<footer class="info"></footer>
+</body>
+<script>
+    let app = new Vue({
+        el: '#todoapp',
+        data: {
+            list: ["写代码", "写代码", "睡觉觉"]
+        }
+    })
+</script>
+</html>
