@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b363f1f0-c423-47a2-ba6a-13f345abb593" name="默认的" comment="默认的">
-      <change afterPath="$PROJECT_DIR$/学习/vue/015-案例-小黑记事本/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学习/vue/015-案例-小黑记事本/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b363f1f0-c423-47a2-ba6a-13f345abb593" name="默认的" comment="默认的" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,6 +122,7 @@
       <workItem from="1615367464331" duration="307000" />
       <workItem from="1615367782625" duration="3970000" />
       <workItem from="1615381772186" duration="979000" />
+      <workItem from="1615382944027" duration="632000" />
     </task>
     <task id="LOCAL-00001" summary="默认的">
       <created>1614863365218</created>
@@ -197,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614867271865</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="默认的">
+      <created>1615382948944</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615382948944</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
